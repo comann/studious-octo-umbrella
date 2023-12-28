@@ -2,14 +2,13 @@ import React from 'react';
 import { ProfessionalSummary } from './components/ProfessionalSummary';
 import { EmploymentHistory } from './components/EmploymentHistory';
 import { Education } from './components/Education';
+import { LeftPanel } from './components/LeftPanel';
 
 function App() {
   return (
 
     <div className='feed'>
-      <div className='panel-one'>
-        <p>Profile</p>
-      </div>
+      <LeftPanel />
       <div className='panel-content'>
         <ProfessionalSummary />
         <EmploymentHistory />

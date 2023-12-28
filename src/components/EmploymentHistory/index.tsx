@@ -1,9 +1,11 @@
 import * as React from 'react'
-import { Header, Timeline } from '../Header'
+import { Header, Timeline } from '../Headers'
 
 export function EmploymentHistory() {
   return <div style={{ paddingLeft: '2.5%', paddingRight: '2.5%' }}>
-    <Header text='Employment History' />
+    <Header >
+      Employment History
+    </Header>
     <Variable />
     <Transcard />
     <Tricycle />
@@ -14,24 +16,35 @@ export function EmploymentHistory() {
 
 function Transcard() {
   return <div >
-    <h4>Database Intern, Transcard</h4>
-    <Timeline text='05/2011 - 06/2012' />
+    <h4>
+      Database Intern, Transcard
+      <br />
+      <Timeline>05/2011 - 06/2012</Timeline>
+    </h4>
+
     <p>In a dynamic role, I managed a helpdesk, serving as a crucial link between developers and account managers. Interacted with data layer through MSSQL database, handling database maintenance and implementing stored procedures. I constructed customized reports, enhancing data analysis and decision-making processes.</p>
   </div>
 }
 
 function Tricycle() {
   return <div >
-    <h4>Database and Reporting Specialist, Tricycle</h4>
-    <Timeline text='12/2010 - 04/2011' />
-    <p>I collaborated on C# application development, making significant contributions to data mining and intelligence activities by designing and implementing an intuitive SSRS client interface. Additionally, I successfully managed government grant-funded initia- tives, showcasing my efficiency in executing multiple projects within tight timelines.</p>
+    <h4>
+      Database and Reporting Specialist, Tricycle
+      <br />
+      <Timeline>12/2010 - 04/2011</Timeline>
+    </h4>
+
+    <p>I collaborated on C# application development, making significant contributions to data mining and intelligence activities by designing and implementing an intuitive SSRS client interface. Additionally, I successfully managed government grant-funded initiatives, showcasing my efficiency in executing multiple projects within tight timelines.</p>
 
   </div>
 }
 function Variable() {
   return <section>
-    <h4>Senior Software Developer, Variable, Inc</h4>
-    <Timeline text='06/2012 - Present' />
+    <h4>
+      Senior Software Developer, Variable, Inc
+      <br />
+      <Timeline>06/2012 - Present</Timeline>
+    </h4>
 
     <ul>
       <li>Spearheaded the development of customer-facing flows, utilizing Java (Android), React Native, React, Nodejs, Express, and GOlang to solve complex customer experience problems and deliver high-quality code.</li>
