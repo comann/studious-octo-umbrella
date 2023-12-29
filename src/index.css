@@ -1,26 +1,33 @@
 .panel-one{
   background-color: rgb(29, 71, 58);
-  float: left;
-  height: 100vh;
+  
   width: 25%;
   max-width: 256px;
-  min-height: 100vh;
+  
   padding-left: 16px;
   padding-right: 16px;
   color: white;
 }
 
+
 .panel-content{
-  float: right;
-  height: 100vh;
   width: calc(75% - 2px);
-  overflow-y: scroll;
 }
 
+body {
+  margin: 0px;
+  -webkit-print-color-adjust:exact !important;
+  print-color-adjust:exact !important;
+
+}
 .feed {
-  display: flex;
   border: 1px solid rgb(29, 71, 58);
   max-width: 1280px;
+  min-height: 100vh;
+
+  display: -ms-flex; 
+  display: -webkit-flex; 
+  display: flex; 
 }
 
 .timeline-header{
@@ -58,6 +65,20 @@
   /* styles here */
   /* set print margins to 0.5 inch */
   @page {
-    margin: 0.15in;
+    margin: 0.1in;
+    font-size: 10px;
+  }
+
+  .panel-one{
+    width: 1.8in;
+    max-width: auto;
+  }
+  
+  .panel-content{
+    width: 6.5in;
+  }
+
+  .feed {
+    min-height: auto;
   }
 }

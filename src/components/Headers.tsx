@@ -1,6 +1,6 @@
 
 export function Header({ children }: { children: React.ReactNode }) {
-  return <h2 style={{ marginTop: 0 }}>{children}</h2>
+  return <h2 style={{ marginTop: 0, marginBottom: 0 }}>{children}</h2>
 }
 
 export function Timeline({ children }: { children: React.ReactNode }) {

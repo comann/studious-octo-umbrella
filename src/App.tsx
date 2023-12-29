@@ -7,7 +7,7 @@ import { LeftPanel } from './components/LeftPanel';
 function App() {
   return (
 
-    <div className='feed'>
+    <div className='feed parent'>
       <LeftPanel />
       <div className='panel-content'>
         <ProfessionalSummary />

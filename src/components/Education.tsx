@@ -6,13 +6,13 @@ export function Education() {
       Education
     </Header>
 
-    <h4>University of Tennessee at Chattanooga
+    <h4 style={{ margin: 0 }}>University of Tennessee at Chattanooga
       <br />
       <Timeline>
         08/2008 - 12/2013
       </Timeline>
     </h4>
-    <p>Graduated with a Batchelors in Computer Science with focus on information security</p>
+    <p >Graduated with a Batchelors in Computer Science with focus on information security</p>
 
   </div>
 }
